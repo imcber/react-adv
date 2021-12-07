@@ -16,10 +16,7 @@ export const Navigation = () => {
 						<ul>
 							{routes.map(({ name, to, path }) => (
 								<li key={path}>
-									<NavLink
-										className={({ isActive }) => (isActive ? 'nav-active' : '')}
-										to={to}
-									>
+									<NavLink className={({ isActive }) => (isActive ? 'nav-active' : '')} to={to}>
 										{name}
 									</NavLink>
 								</li>
